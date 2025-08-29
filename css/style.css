@@ -1,0 +1,372 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* = login  */
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 15px;
+}
+
+.login-container {
+    background: #6a5ea6;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    width: 350px;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #ddd;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background:#b9bbbf;
+}
+
+.btn a{
+    color: #6a5ea6;
+    text-decoration:none;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.extra {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.extra a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.btn-cad{
+    width: 200px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #ddd;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #6a5ea6;
+    color: #fff;
+}
+
+
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding: 30px 15px 30px 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: #6a5ea6;
+    height: 70px;
+}
+
+nav a i{
+    margin-right: 20px;
+    font-size: 24px;
+    color: #16171a;
+
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search .input-field{
+    border: 1px solid #000;
+}
+
+.search .input-field::placeholder{
+    font-weight: 900;
+    padding: 5px;    
+}
+
+.search label{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 900;
+} 
+
+.search input{
+    height: 35px;
+    width: 290px;
+    border-radius: 4px;
+}
+
+.search input::placeholder{
+    color: #525050;
+    font-size: 16px;
+}
+
+table{
+    width: 98%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #000;
+    font-weight: 600;
+}
+
+thead tr{
+    background-color: #6a5ea6;
+}
+
+th,td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #1a1a1a;
+    cursor: pointer;
+}
+
+th{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+tbody tr:hover{
+    background-color: #b3c6e9;
+}
+
+td a i{
+    color: #6a5ea6;
+}
+
+/* = tabela resposiva */
+/*
+.table-container{
+    padding: 0 10%;
+    margin: 40px auto 0;
+}
+
+.head{
+    font-size: 40px;
+    text-align: center;
+    color: #f1f1f1;
+    margin-bottom: 40px;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead{
+    background-color: #357266;
+}
+
+.table thead tr th{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color: #ffffff;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #dee2e685;
+    text-shadow: 1px 1px #000;
+}
+
+.table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #f1f1f1;
+    background-color: #3c3f44;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dee2e685;
+}*/
+
+
+/*----------------responsive--------*/
+
+@media (max-width: 768px) {
+
+
+    .table{
+        background-color: transparent;
+        box-shadow: none;
+    }    
+
+    .table thead{
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+
+    .table tr{
+        margin-bottom: 25px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.9);
+    }
+    
+    .table tbody tr td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        background-color: #fff;
+    }
+
+    .table td:before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 5px;
+        font-weight: 900;
+        font-size: 14px;
+        text-align: left;
+        color: #6a5ea6;
+    }
+   
+}
+
+
+
+ /* Modal */
+    .modal {
+      display: none; /* escondido por padrão */
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background: rgba(0,0,0,0.5);
+      padding: 10px;
+    }
+
+    /* Conteúdo do modal */
+    .modal-content {
+      background: #fff;
+      margin: 100px auto;
+      padding: 20px;
+      border-radius: 12px;
+      width: 500px;
+      max-width: 100%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      position: relative;
+      animation: aparecer 0.3s ease;
+    }
+
+    /* Animação suave */
+    @keyframes aparecer {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Botão fechar */
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #6a5ea6;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background: #6a5ea6;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn-submit:hover {
+      background: #584e8f;
+    }
+

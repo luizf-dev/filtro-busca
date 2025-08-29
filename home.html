@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Filtro de busca</title>
+        <meta name="description" content="">
+        <!-- Font Awesome para os ícones -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <!--CSS-->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+            <a title="Sair" href="index.html"><i class="fas fa-sign-out-alt"></i></a>
+        </nav>
+
+        <div class="container">
+                <div class="search">
+                    <label>Pesquisa por cliente:  </label>
+                    <input class="input-field" id="myInput" type="text" placeholder="Digite o nome do cliente">
+                </div>
+                <div><button id="openModal"  class="btn-cad"><i class="fas fa-plus-circle btn-icons"></i> Cadastrar Cliente</button></div>        
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>                   
+                                <th>Nome Cliente</th>
+                                <th>Local</th>
+                                <th>Número</th>
+                                <th>Editar / Excluir</th>
+                            </tr>
+                        </thead>
+                        <tbody id="myTable">                   
+                            <tr>
+                                <td data-label="Nome">G Móveis</td>                            
+                                <td data-label="Local">Parede</td>                            
+                                <td data-label="Número">24</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Nome">Astérope</td>                            
+                                <td data-label="Local">Gaveta</td>                            
+                                <td data-label="Número">68</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Nome">Wood Prime</td>                            
+                                <td data-label="Local">Parede</td>                            
+                                <td data-label="Número">18</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Nome">Casavee</td>                            
+                                <td data-label="Local">Gaveta</td>                            
+                                <td data-label="Número">80</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Nome">Home Chairs</td>                            
+                                <td data-label="Local">Gaveta</td>                            
+                                <td data-label="Número">75</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Nome">Zefter</td>                            
+                                <td data-label="Local">Gaveta</td>                            
+                                <td data-label="Número">63</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Nome">Vilmar Fechy</td>                            
+                                <td data-label="Local">Gaveta</td>                            
+                                <td data-label="Número">52</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Nome">Abstratto</td>                            
+                                <td data-label="Local">Parede</td>                            
+                                <td data-label="Número">01</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Nome">Abstratto</td>                            
+                                <td data-label="Local">Parede</td>                            
+                                <td data-label="Número">02</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Nome">Abstratto</td>                            
+                                <td data-label="Local">Parede</td>                            
+                                <td data-label="Número">03</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Nome">Brazile</td>                            
+                                <td data-label="Local">Gaveta</td>                            
+                                <td data-label="Número">26</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Nome">Ferrati</td>                            
+                                <td data-label="Local">Gaveta</td>                            
+                                <td data-label="Número">10</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Nome">Ferrati</td>                            
+                                <td data-label="Local">Parede</td>                            
+                                <td data-label="Número">14</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Nome">Franco Bachot</td>                            
+                                <td data-label="Local">Gaveta</td>                            
+                                <td data-label="Número">51</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Nome">Franco Bachot</td>                            
+                                <td data-label="Local">Parede</td>                            
+                                <td data-label="Número">16</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Nome">Madeira Maciça</td>                            
+                                <td data-label="Local">Gaveta</td>                            
+                                <td data-label="Número">77</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Nome">AS Móveis</td>                            
+                                <td data-label="Local">Gaveta</td>                            
+                                <td data-label="Número">40</td>                            
+                                <td data-label="Editar / Excluir">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href=""><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>  
+                </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div id="clienteModal" class="modal">
+            <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Novo Cliente</h2>
+            <form id="formCliente">
+                <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                <label for="local">Local</label>
+                <input type="text" id="local" name="local" required>
+                </div>
+                <div class="form-group">
+                <label for="numero">Número</label>
+                <input type="text" id="numero" name="numero" required>
+                </div>
+                <button type="submit" class="btn-submit">Salvar</button>
+            </form>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+        /*$(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+        });*/
+
+        $(document).ready(function(){
+            function removerAcentos(str) {
+                return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            }
+
+            $("#myInput").on("keyup", function() {
+                var value = removerAcentos($(this).val().toLowerCase());
+                var rows = $("#myTable tr");
+                var visibleCount = 0;
+
+                rows.filter(function() {
+                    var text = removerAcentos($(this).text().toLowerCase());
+                    var match = text.indexOf(value) > -1;
+                    $(this).toggle(match);
+                    if (match) visibleCount++;
+                });
+
+                // Remove a linha "não encontrado" se já existir
+                $("#noResult").remove();
+
+                // Se nenhum resultado visível, adiciona a mensagem
+                if (visibleCount === 0) {
+                    $("#myTable").append(
+                        '<tr id="noResult"><td colspan="4" style="text-align:center; color:red;">Cliente não encontrado</td></tr>'
+                    );
+                }
+            });
+        });
+
+
+            const modal = document.getElementById("clienteModal");
+            const btn = document.getElementById("openModal");
+            const close = document.getElementById("closeModal");
+
+            btn.onclick = () => modal.style.display = "block";
+            close.onclick = () => modal.style.display = "none";
+            window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; }
+
+            // Exemplo de submit (aqui só impede reload e mostra os dados no console)
+            document.getElementById("formCliente").addEventListener("submit", function(e){
+            e.preventDefault();
+            const nome = document.getElementById("nome").value;
+            const local = document.getElementById("local").value;
+            const numero = document.getElementById("numero").value;
+            console.log("Cliente cadastrado:", nome, local, numero);
+            modal.style.display = "none"; // fecha modal
+            this.reset(); // limpa formulário
+            });
+
+
+
+        </script>
+
+    </body>
+</html>
