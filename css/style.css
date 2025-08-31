@@ -115,7 +115,7 @@ nav{
 nav a i{
     margin-right: 20px;
     font-size: 24px;
-    color: #16171a;
+    color: #fff;
 
 }
 
@@ -176,6 +176,7 @@ table{
 
 thead tr{
     background-color: #6a5ea6;
+    color: white;
 }
 
 th,td{
@@ -312,7 +313,7 @@ h2 {
     border-radius: 6px;
 }
 
-.btn-submit {
+.btn-submit, .btn-cancel {
     width: 100%;
     padding: 12px;
     border: none;
@@ -322,6 +323,7 @@ h2 {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    margin: 5px;
 }
 .btn-submit:hover {
     background: #584e8f;
